@@ -7,6 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+                font-size: 16px;
+            }
+        }
         :root {
             --primary: #3b82f6;
             --secondary: #64748b;
@@ -116,20 +122,32 @@
                         Saya memiliki passion untuk menciptakan antarmuka pengguna yang intuitif dan pengalaman pengguna yang mulus. 
                         Selain coding, saya juga menikmati fotografi, traveling, dan berkebun di waktu senggang.
                     </p>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+                    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 text-left">
                         <div>
-                            <h4 class="font-medium">Nama:</h4>
-                            <p class="text-gray-600 dark:text-gray-300">Ali Abdurrahman</p>
+                            <h3 class="font-semibold text-blue-500">Nama:</h3>
+                            <p class="text-gray-700 dark:text-gray-300">Ali Abdurrahman</p>
                         </div>
                         <div>
-                            <h4 class="font-medium">Email:</h4>
-                            <p class="text-gray-600 dark:text-gray-300">aleeyy.todo@gmail.com</p>
-                        </div>
-                        <div>
-                            <h4 class="font-medium">Dari:</h4>
-                            <p class="text-gray-600 dark:text-gray-300">Batam, Indoensia</p>
-                        </div>
+                            <h3 class="font-semibold text-blue-500">Email:</h3>
+                            <p class="text-gray-700 dark:text-gray-300">
+                            <a href="mailto:aleeyy.todo@gmail.com" class="hover:underline">
+                            <i class="fas fa-envelope mr-2 text-blue-500"></i> aleeyy.todo@gmail.com
+                        </a>
+                        </p>
                     </div>
+                    <div>
+                        <h3 class="font-semibold text-blue-500">Nomor Telepon:</h3>
+                        <p class="text-gray-700 dark:text-gray-300">
+                            <a href="https://wa.me/6281213643152" class="hover:underline">
+                                <i class="fas fa-phone-alt mr-2 text-blue-500"></i> +62 81213643152S
+                            </a>
+                        </p>
+                    </div>
+                    <div>
+                            <h3 class="font-semibold text-blue-500">Dari:</h3>
+                            <p class="text-gray-700 dark:text-gray-300">Batam, Indonesia</p>
+                    </div>
+                    <div>
                 </div>
             </div>
         </div>
@@ -203,13 +221,13 @@
                 <!-- Project 1 -->
                 <div class="card bg-gray-50 dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300">
                     <div class="h-48 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                        <img src="assets/SS_To-Do-List-App.png" 
                              alt="Project 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Website E-Commerce</h3>
+                        <h3 class="text-xl font-semibold mb-2">To-Do List Web App</h3>
                         <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Platform belanja online dengan keranjang belanja, sistem pembayaran, dan manajemen produk.
+                            Aplikasi web sederhana untuk mencatat dan mengatur daftar tugas harian secara efisien.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="skill-pill px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-xs">React</span>
@@ -217,10 +235,10 @@
                             <span class="skill-pill px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-xs">MongoDB</span>
                         </div>
                         <div class="flex space-x-3">
-                            <a href="#" class="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
+                            <a href="https://github.com/aleeyytodo/SafeDo" class="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
                                 <i class="fab fa-github"></i> Code
                             </a>
-                            <a href="#" class="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
+                            <a href="https://aleeyytodo.github.io/SafeDo/" class="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
                                 <i class="fas fa-external-link-alt"></i> Demo
                             </a>
                         </div>
